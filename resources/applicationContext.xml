@@ -7,6 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <context:property-placeholder location="classpath:myApp.properties"/>
 
     <bean id = "myPet"
           class = "com.m1ddler.spring.Dog">
@@ -14,6 +15,10 @@
 
     <bean id = "myPerson"
         class = "com.m1ddler.spring.Person">
-        <constructor-arg ref = "myPet"/>
+<!--        <constructor-arg ref = "myPet"/>-->   <!-- Ref is id of dependent bean -->
+        <property name = "pet" ref = "myPet"/>    <!-- Property name is a name of Person setter -->
+        <property name = "surName" value = "${person.surname}"/>
+        <property name = "age" value = "${person.age}"/>
     </bean>
+    
 </beans>
