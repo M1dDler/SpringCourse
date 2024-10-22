@@ -11,4 +11,9 @@
     <bean id = "myPet"
           class = "com.m1ddler.spring.Dog">
     </bean>
+
+    <bean id = "myPerson"
+        class = "com.m1ddler.spring.Person">
+        <constructor-arg ref = "myPet"/>
+    </bean>
 </beans>
