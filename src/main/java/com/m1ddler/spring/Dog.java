@@ -1,5 +1,10 @@
 package com.m1ddler.spring;
 
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component("dogBean")
+@Scope("prototype")
 public class Dog implements Pet{
     private String name;
 

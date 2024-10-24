@@ -1,11 +1,25 @@
 package com.m1ddler.spring;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+@Component("personBean")
+@Scope("prototype")
 public class Person {
+
     private Pet pet;
+    @Value("${person.surname}")
     private String SurName;
+    @Value("${person.age}")
     private int age;
 
-//    public Person(Pet pet) {
+//    public Person(@Qualifier("catBean") Pet pet) {
 //        System.out.println("Person bean is created");
 //        this.pet = pet;
 //    }
@@ -14,6 +28,8 @@ public class Person {
         System.out.println("Person bean is created");
     }
 
+    @Autowired
+    @Qualifier("catBean")
     public void setPet(Pet pet) {
         System.out.println("Class Person set pet");
         this.pet = pet;
@@ -40,5 +56,15 @@ public class Person {
     public void callYourPet(){
         System.out.println("Hello, my lovely Pet!");
         pet.say();
+    }
+
+    @PostConstruct
+    public void init(){
+        System.out.println("Person class: Init method");
+    }
+
+    @PreDestroy
+    public void destroy(){
+        System.out.println("Person class: Destroy method");
     }
 }
