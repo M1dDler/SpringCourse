@@ -3,8 +3,11 @@ package com.m1ddler.spring;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component("dogBean")
-@Scope("prototype")
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+//@Component("dogBean")
+//@Scope("prototype")
 public class Dog implements Pet{
     private String name;
 
@@ -25,10 +28,12 @@ public class Dog implements Pet{
         System.out.println("Bow-Wow");
     }
 
+    @PostConstruct
     public void init() {
         System.out.println("Class Dog: init method");
     }
 
+    @PreDestroy
     public void destroy() {
         System.out.println("Class Dog: destroy method");
     }

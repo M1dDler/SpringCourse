@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-@Component("personBean")
-@Scope("prototype")
+//@Component("personBean")
+//@Scope("prototype")
 public class Person {
 
     private Pet pet;
@@ -24,16 +24,21 @@ public class Person {
 //        this.pet = pet;
 //    }
 
-    public Person() {
+    public Person(Pet pet) {
         System.out.println("Person bean is created");
-    }
-
-    @Autowired
-    @Qualifier("catBean")
-    public void setPet(Pet pet) {
-        System.out.println("Class Person set pet");
         this.pet = pet;
     }
+
+//    public Person() {
+//        System.out.println("Person bean is created");
+//    }
+
+//    @Autowired
+//    @Qualifier("catBean")
+//    public void setPet(Pet pet) {
+//        System.out.println("Class Person set pet");
+//        this.pet = pet;
+//    }
 
     public String getSurName() {
         return SurName;
@@ -62,7 +67,7 @@ public class Person {
     public void init(){
         System.out.println("Person class: Init method");
     }
-
+//
     @PreDestroy
     public void destroy(){
         System.out.println("Person class: Destroy method");
