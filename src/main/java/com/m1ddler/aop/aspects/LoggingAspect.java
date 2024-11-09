@@ -1,7 +1,10 @@
 package com.m1ddler.aop.aspects;
 
+import com.m1ddler.aop.Book;
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
@@ -53,9 +56,28 @@ public class LoggingAspect {
 
 
 
-    @Before("com.m1ddler.aop.aspects.MyPointCuts.allGetMethodsPointcut()")
-    public void beforeGetLoggingAdvice(){
+    @Before("com.m1ddler.aop.aspects.MyPointCuts.allAddMethodsPointcut()")
+    public void beforeAddLoggingAdvice(JoinPoint joinPoint) {
+        MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
+        System.out.println("methodSignature: "+methodSignature);
+        System.out.println("methodSignature getMethod: "+methodSignature.getMethod());
+        System.out.println("methodSignature getReturnType: "+methodSignature.getReturnType());
+        System.out.println("methodSignature getName: "+methodSignature.getName());
         System.out.println("beforeGetLoggingAdvice: Trying to get a book and magazine");
+
+        if (methodSignature.getName().equals("addBook")){
+            Object[] args = joinPoint.getArgs();
+            for(Object arg : args){
+                if (arg instanceof Book){
+                    Book mybook = (Book)arg;
+                    System.out.println("Information about book: Name - "+mybook.getName()+". Author - "+mybook.getAuthor()+". " +
+                            "Year published - "+mybook.getYearPublished());
+                }
+                else if (arg instanceof String){
+                    System.out.println("Book in library add: "+arg);
+                }
+            }
+        }
     }
 
 }

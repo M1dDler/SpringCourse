@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Order(20)
 public class SecurityAspect {
-    @Before("com.m1ddler.aop.aspects.MyPointCuts.allGetMethodsPointcut()")
-    public void beforeGetSecurityAdvice(){
+    @Before("com.m1ddler.aop.aspects.MyPointCuts.allAddMethodsPointcut()")
+    public void beforeAddSecurityAdvice(){
         System.out.println("beforeGetSecurityAdvice: Trying to check the rights to receive the book");
     }
 }
