@@ -1,18 +1,25 @@
 package com.m1ddler.hibernate_test.entity;
 
-import com.m1ddler.aop.Student;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class Test1 {
+public class Test5 {
     public static void main(String[] args) {
         try (SessionFactory factory = new Configuration().configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Employee.class).buildSessionFactory()) {
             Session session = factory.getCurrentSession();
-            Employee employee = new Employee("Dutch", "Van Der Linde", "HR", 1500);
+
+//            session.beginTransaction();
+//            Employee emp = new Employee("Micah", "Bell", "QA", 100);
+//            session.persist(emp);
+//            session.getTransaction().commit();
+
+            session = factory.getCurrentSession();
             session.beginTransaction();
-            session.persist(employee);
+//            Employee emp = session.get(Employee.class, 8);
+//            session.remove(emp);
+            session.createQuery("delete Employee where name = 'Micah'").executeUpdate();
             session.getTransaction().commit();
         }
     }
