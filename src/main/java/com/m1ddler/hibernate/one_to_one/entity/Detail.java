@@ -1,4 +1,4 @@
-package com.m1ddler.hibernate.test2.entity;
+package com.m1ddler.hibernate.one_to_one.entity;
 
 import jakarta.persistence.*;
 

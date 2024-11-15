@@ -1,4 +1,4 @@
-package com.m1ddler.hibernate_test.entity;
+package com.m1ddler.hibernate.one_to_many_bi.entity;
 
 import jakarta.persistence.*;
 
@@ -13,18 +13,18 @@ public class Employee {
     private String name;
     @Column(name="surname")
     private String surname;
-    @Column(name="department")
-    private String department;
     @Column(name="salary")
     private int salary;
+    @ManyToOne(cascade=CascadeType.ALL)
+    @JoinColumn(name="department_id")
+    private Department department;
 
     public Employee() {
     }
 
-    public Employee(String name, String surname, String department, int salary) {
+    public Employee(String name, String surname, int salary) {
         this.name = name;
         this.surname = surname;
-        this.department = department;
         this.salary = salary;
     }
 
@@ -32,37 +32,38 @@ public class Employee {
         return id;
     }
 
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public void setSurname(String surname){
-        this.surname = surname;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getSurname(){
+    public String getSurname() {
         return surname;
     }
 
-    public void setDepartment(String department){
-        this.department = department;
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
-    public String getDepartment(){
-        return department;
+    public int getSalary() {
+        return salary;
     }
 
-    public void setSalary(int salary){
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
-    public int getSalary(){
-        return salary;
+    public Department getDepartment() {
+        return department;
     }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
 
     @Override
     public String toString() {
@@ -70,7 +71,6 @@ public class Employee {
                 "id=" + id +
                 ", name=" + name +
                 ", surname=" + surname +
-                ", department=" + department +
                 ", salary= " + salary +
                 "}";
     }

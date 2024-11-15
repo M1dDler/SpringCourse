@@ -1,7 +1,7 @@
-package com.m1ddler.hibernate.test2;
+package com.m1ddler.hibernate.one_to_one;
 
-import com.m1ddler.hibernate.test2.entity.Detail;
-import com.m1ddler.hibernate.test2.entity.Employee;
+import com.m1ddler.hibernate.one_to_one.entity.Detail;
+import com.m1ddler.hibernate.one_to_one.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;

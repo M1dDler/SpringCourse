@@ -1,6 +1,6 @@
-package com.m1ddler.hibernate_test;
+package com.m1ddler.hibernate.test;
 
-import com.m1ddler.hibernate_test.entity.Employee;
+import com.m1ddler.hibernate.test.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
