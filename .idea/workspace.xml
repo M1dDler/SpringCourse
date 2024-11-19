@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bd419fdf-a62b-46f5-aa30-cfd59b119860" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/applicationContext2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/applicationContext3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/hibernate.cfg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/myApp.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/AbstractLibrary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/MyConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/SchoolLibrary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/Test2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/Test3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/UniLibrary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/University.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/aspects/ExceptionHandlingAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/aspects/LoggingAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/aspects/MyPointCuts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/aspects/NewLoggingAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/aspects/SecurityAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/aop/aspects/UniversityLoggingAspect.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/many_to_many/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/many_to_many/entity/Child.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/many_to_many/entity/Section.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/one_to_many_bi/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/one_to_many_bi/entity/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/one_to_many_bi/entity/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/one_to_many_uni/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/one_to_many_uni/entity/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/one_to_many_uni/entity/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/one_to_one/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/one_to_one/Test2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/one_to_one/entity/Detail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/one_to_one/entity/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/test/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/test/Test2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/test/Test3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/test/Test4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/test/Test5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/hibernate/test/entity/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/Cat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/ConfigWithAnnotations1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/MyConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/Pet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/ScopeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/Test2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/Test3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/Test4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/Test5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/m1ddler/spring/Test6.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2p4QQaGivLhVcLLGwDQ2dpozH57" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/M1dDler/IdeaProjects/SpringCourse/spring_course_mvc_webapp",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd419fdf-a62b-46f5-aa30-cfd59b119860" name="Changes" comment="" />
+      <created>1732022854139</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732022854139</updated>
+      <workItem from="1732022855246" duration="62000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
