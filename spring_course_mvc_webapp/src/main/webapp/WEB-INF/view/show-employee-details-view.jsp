@@ -25,6 +25,11 @@ Language(s):
         <li>${lang}</li>
     </c:forEach>
 </ul>
+
+Phone number: ${employee.phoneNumber}
+<br><br>
+Email: ${employee.email}
+
 <br><br>
 <a href="askDetails">Back to ask details</a>
 </body>
