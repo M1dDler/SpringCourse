@@ -1,7 +1,6 @@
 package com.m1ddler.spring.mvc_hibernate_aop.dao;
 
 import com.m1ddler.spring.mvc_hibernate_aop.entity.Employee;
-import jakarta.transaction.Transactional;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,4 +22,24 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         Session session = sessionFactory.getCurrentSession();
         return session.createQuery("from Employee", Employee.class).getResultList();
     }
+
+    @Override
+    public void saveEmployee(Employee employee) {
+        Session session = sessionFactory.getCurrentSession();
+        session.merge(employee);
+    }
+
+    @Override
+    public Employee getEmployeeById(int empId) {
+        Session session = sessionFactory.getCurrentSession();
+        return session.get(Employee.class, empId);
+    }
+
+    @Override
+    public void deleteEmployee(int empId) {
+        Session session = sessionFactory.getCurrentSession();
+        session.remove(session.get(Employee.class, empId));
+    }
+
+
 }
