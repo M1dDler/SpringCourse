@@ -36,14 +36,12 @@ public class MyRestController {
 
     @PostMapping("/employees")
     public Employee createEmployee(@RequestBody Employee employee){
-        employeeService.saveEmployee(employee);
-        return employee;
+        return employeeService.saveEmployee(employee);
     }
 
     @PutMapping("/employees")
     public Employee updateEmployee(@RequestBody Employee employee){
-        employeeService.saveEmployee(employee);
-        return employee;
+        return employeeService.saveEmployee(employee);
     }
 
     @DeleteMapping("/employees/{id}")
